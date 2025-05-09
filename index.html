@@ -267,6 +267,63 @@
                 </div>
             </div>
           </div>
+
+            <h2>8. Branches</h2>
+            <p>
+                Branches are alternative timelines for a project, they allow you us to create separate contexts where we can try new things or even work on multiple ideas in parallel. 
+                Whatever happens in one branch does not affect the other branches. In git, we are always working inside a branch even if we don't specify a branch.
+                As discussed earlier, in git, we are always working in a branch. The default branch is the <code>master branch</code>. 
+                It doesn't do anything special or have any fancy powers, it's just like any other branches. 
+                In some projects however, the master branch is treated as the single source of truth or the official branch.
+            </p>
+
+            <h3>Viewing branches</h3>
+            <p>
+                To view all the branches in your repository, use the command: 
+            </p>
+            <ul>
+                <li>
+                    <code>git branch</code>
+                </li>
+            </ul>
+            <p>
+                This will list all the branches in your repository. The current branch will be highlighted with an asterisk (<strong>*</strong>).
+            </p>
+
+            <p>
+                To create a new branch, use the command:
+            </p>
+            <ul>
+                <li>
+                    <code>git branch BRANCH_NAME</code> i.e, <strong>git branch production</strong>
+                </li>
+            </ul>
+
+            <p>
+                This will create a new branch with the name <code>BRANCH_NAME</code>. 
+                To switch to the new branch, use the command:
+            </p>
+            <ul>
+                <li>
+                    <code>git switch BRANCH_NAME</code> i.e, <strong>git switch production</strong>
+                </li>
+            </ul>
+
+            <div>
+                <h3>Here is an example of viewing branches</h3>
+                <div>
+                    <figure>
+                    <img
+                        src="./images/git-branch.jpg"
+                        alt="Viewing branches"
+                        width="700px"
+                    />
+                    <figcaption>
+                        Viewing branches. The current branch is highlighted with an
+                        asterisk (*).
+                    </figcaption>
+                    </figure>
+                </div>
     </div>
   </body>
 </html>
