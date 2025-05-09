@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git and GitHub Blog</title>
+    <link rel="icon" href="./images/git-github.jpg" />
+  </head>
+  <body>
+    <div>
+      <header>
+        <img src="./images/git-github.jpg" alt="Git and GitHub" width="50px" />
+        <h1>Everyday Git</h1>
+        <p>A practical guide to Git version control for everyday use.</p>
+      </header>
+
+      <div>
+        <h2>1. Get Started</h2>
+        <p>
+          Welcome to <strong>Everyday Git</strong> — your beginner-friendly
+          guide to understanding Git, a powerful version control system. In this
+          blog, we'll walk you through essential Git concepts step-by-step. But
+          before we dive in, let's set up your development environment.
+        </p>
+
+        <h3>1.1 Setting Up Your Environment</h3>
+
+        <div>
+          <h3>📁 Create Your Project Folder</h3>
+          <p>
+            Start by opening your file explorer and creating a folder named
+            <code>everyday-git</code> or any name you prefer. This folder will
+            contain all your HTML files.
+          </p>
+
+          <h3>🗂️ Create Required Files</h3>
+          <p>
+            Inside your project folder, create a new file called
+            <code>index.html</code>. This file will serve as the main page of
+            your webpage. You can also create additional folders like
+            <code>images/</code> or <code>assets/</code> to store your
+            screenshots and other media.
+          </p>
+
+          <h3>💻 Open Your Project in VS Code</h3>
+          <p>
+            Open your project folder in
+            <strong>Visual Studio Code</strong> <code> (VS Code)</code>. You can
+            do this by <b>right-clicking</b> on the folder and selecting
+            <i>"Open with Code"</i> or by using the <i>"File"</i> menu in VS
+            Code or the <em>command-line</em>. This will allow you to edit your
+            HTML files easily.
+          </p>
+
+          <h3>✅ You're Ready!</h3>
+          <p>
+            With your environment set up and <code>index.html</code> created,
+            you’re now ready to begin your journey into Git. In the next
+            section, we’ll look at what Git is and why it’s so widely used in
+            the world of software development.
+          </p>
+        </div>
+      </div>
+
+      <h2>2. What is Git</h2>
+      <p>
+        Git is a Version Control System. A version control system is a software
+        that <code>tracks</code> and <code>manages</code> changes to files over
+        time. Version Control Systems allow users to revisit earlier versions of
+        their files, compare changes between versions, undo changes and a lot
+        more. Other version control software include:
+        <strong>Subversion</strong>, <strong>CVS</strong>,
+        <strong>Mercurial</strong>. They all have a common goal but vary
+        significantly in how they achieve these goals. GIT is the most popular
+        version control software/system.
+      </p>
+
+      <h2>3. Installing Git</h2>
+      <p>
+        Before we can start using Git, we need tto check whether it is installed
+        in the machine. To check if Git is installed, open your terminal (or
+        command prompt) and run the following command:
+        <code>git --version</code>. If Git is installed, you will see the
+        version number. If not, you will need to install it.
+      </p>
+
+      <div>
+        <h3>Here is an example of checking whether git is installed</h3>
+        <div>
+          <figure>
+            <img
+              src="images/git-version.jpg"
+              alt="Checking if Git is installed"
+              width="700px"
+            />
+            <figcaption>
+              Checking if Git is installed, if not installed follow the steps
+              below.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <p>To install Git, follow the instructions for your operating system:</p>
+      <ul>
+        <li>
+          <strong>Windows:</strong> Download the Git installer from the
+          <a href="https://git-scm.com/download/win" target="_blank"
+            >official website</a
+          >. Follow the installation instructions.
+        </li>
+        <li>
+          <strong>macOS:</strong> You can install Git using Homebrew. Open your
+          terminal and run: <code>brew install git</code>.
+        </li>
+        <li>
+          <strong>Linux:</strong> Use your package manager to install Git. For
+          example, on Ubuntu, run: <code>sudo apt-get install git</code>.
+        </li>
+      </ul>
+
+      <h2>4. Configuring Git</h2>
+      <p>
+        After installing Git, you need to configure it with your name and email
+        address. This information will be associated with your commits. Open
+        your terminal and run the following commands:
+      </p>
+      <div>
+        <ul>
+          <li>
+            <code>git config --global user.name "Your Name"</code> (prefer you'd use the name same as you <strong><a href="https://github.com" target="_blank">GitHub</a></strong> account)
+          </li>
+          <li>
+            <code>git config --global user.email " Your email address"</code>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Here is an example of configuring the name and the email address</h3>
+        <div>
+          <figure>
+            <img
+              src="./images/config-git.jpg"
+              alt="Configuring Git"
+              width="700px"
+            />
+            <figcaption>
+                Configuring Git with your name and email address. This is
+                important because it helps to identify who made the changes in
+                the project.
+            </figcaption>
+          </figure>
+        </div>
+
+        <h2>5. Intializing a Git repository</h2>
+        <p>To initialize a git repository</p>
+        <ul>
+          <li>
+            Open the terminal or command prompt in your project directory, you can also open your command line tool and navigate to your project directory.
+          </li>
+          <li>
+            Run the command: <code>git init</code>. This will create a new Git
+            repository in your project folder.
+          </li>
+        </ul>
+        <p>
+          After running the <code>git init</code> command, you will see a new
+          folder named <code>.git</code> in your project directory. This folder
+          contains all the information about your Git repository.
+        </p>
+        <div>
+          <h3>Here is an example of initializing a git repository</h3>
+          <div>
+            <figure>
+              <img
+                src="./images/git-init.jpg"
+                alt="Initializing a Git repository"
+                width="800px"
+              />
+              <figcaption>
+                Initializing a Git repository. This creates a new folder named
+                .git in your project directory.
+              </figcaption>
+            </figure>
+          </div>
+
+          <h2>6. Adding files to the staging area</h2>
+          <p>
+            The staging area is where you prepare your files before committing
+            them to the repository. To add files to the staging area, use the
+            <code>git add</code> command followed by the file name. For example:
+          </p>
+            <ul>
+                <li>
+                To add a single file: <code>git add filename.html </code> i.e, <strong>git add index.html</strong>
+                </li>
+                <li>
+                To add all files in the current directory:
+                <code>git add .</code> or <code>git add -A</code>
+                </li>
+            </ul>
+
+            <div>
+          <h3>Here is an example of initializing a git repository</h3>
+          <div>
+            <figure>
+              <img
+                src="./images/git-add.jpg"
+                alt="Adding files to the staging area"
+                width="700px"
+              />
+              <figcaption>
+                Adding files to the staging area. This prepares your files for
+                committing.
+              </figcaption>
+            </figure>
+          </div>
+
+          <h2>7. Commiting changes</h2>
+          <p>
+            As discussed earlier, committing is the most fundamental aspect of git. A commit in git is basically a snapshot of your project at a particular point in time.
+          </p>
+
+          <div>
+            <h3>Key components of a commit</h3>
+            <ul>
+              <li>
+                <strong>A hash</strong> : a unique identifier for each commit, generated by git.
+              </li>
+              <li>
+                <strong>Commit message</strong>:  a descriptive message that explains the purpose of the commit.
+              </li>
+              <li>
+                <strong>Author</strong>: the person who made the commit.
+              </li>
+                <li>
+                    <strong>Timestamp</strong> the date and time when the commit was made.
+                </li>
+            </ul>
+            <p>
+              Committing will only work if there are changes in the staging area. To commit, we use the <code>git commit</code> command. Running <code>git commit</code> without passing any options will open a text editor (vi by default) for you to type in the message. This approach is not beginner-friendly as most beginners find it hard to use vi, we can configure git to use a text editor of our choosing (more about this later). Luckily, there is a <code>-m</code> flag that allows us to pass a commit message directly without having to open a text editor.
+            </p>
+
+            <p>
+              To commit changes, use the following command:
+            </p>
+            <ul>
+              <li>
+                <code>git commit -m "Your commit message"</code> i.e, <strong>git commit -m "Initial commit"</strong>
+              </li>
+            </ul>
+
+            <div>
+                <h3>Here is an example of committing changes</h3>
+                <div>
+                    <figure>
+                    <img
+                        src="./images/git-commit.jpg"
+                        alt="Committing changes"
+                        width="700px"
+                    />
+                    <figcaption>
+                        Committing changes. This creates a new commit with a unique
+                        hash and a message.
+                    </figcaption>
+                    </figure>
+                </div>
+            </div>
+          </div>
+    </div>
+  </body>
+</html>
