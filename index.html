@@ -1,438 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git and GitHub Blog</title>
+    <link rel="icon" href="./images/git-github.jpg" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Git and GitHub Blog</title>
-  <link rel="icon" href="./images/git-github.jpg" />
-</head>
-
-<body>
-  <div>
-    <header>
-      <img src="./images/git-github.jpg" alt="Git and GitHub" width="50px" />
-      <h1>Everyday Git</h1>
-      <p>A practical guide to Git version control for everyday use.</p>
-    </header>
-
+  <body>
     <div>
-      <h2>1. Get Started</h2>
+      <header>
+        <img src="./images/git-github.jpg" alt="Git and GitHub" width="50px" />
+        <h1>Everyday Git</h1>
+        <p>A practical guide to Git version control for everyday use.</p>
+      </header>
+
+      <div>
+        <h2>1. Get Started</h2>
+        <p>
+          Welcome to <strong>Everyday Git</strong> — your beginner-friendly
+          guide to understanding Git, a powerful version control system. In this
+          blog, we'll walk you through essential Git concepts step-by-step. But
+          before we dive in, let's set up your development environment.
+        </p>
+
+        <h3>1.1 Setting Up Your Environment</h3>
+
+        <div>
+          <h3>Create Your Project Folder</h3>
+          <p>
+            Start by opening your file explorer and creating a folder named
+            <code>everyday-git</code> or any name you prefer. This folder will
+            contain all your HTML files.
+          </p>
+
+          <h3>Create Required Files</h3>
+          <p>
+            Inside your project folder, create a new file called
+            <code>index.html</code>. This file will serve as the main page of
+            your webpage. You can also create additional folders like
+            <code>images/</code> or <code>assets/</code> to store your
+            screenshots and other media.
+          </p>
+
+          <h3>Open Your Project in VS Code</h3>
+          <p>
+            Open your project folder in
+            <strong>Visual Studio Code</strong> <code>(VS Code)</code>. You can
+            do this by <b>right-clicking</b> on the folder and selecting
+            <i>"Open with Code"</i> or by using the <i>"File"</i> menu in VS
+            Code or the <em>command-line</em>. This will allow you to edit your
+            HTML files easily.
+          </p>
+
+          <h3>You're Ready!</h3>
+          <p>
+            With your environment set up and <code>index.html</code> created,
+            you’re now ready to begin your journey into Git. In the next
+            section, we’ll look at what Git is and why it’s so widely used in
+            the world of software development.
+          </p>
+        </div>
+      </div>
+
+      <h2>2. What is Git</h2>
       <p>
-        Welcome to <strong>Everyday Git</strong> — your beginner-friendly
-        guide to understanding Git, a powerful version control system. In this
-        blog, we'll walk you through essential Git concepts step-by-step. But
-        before we dive in, let's set up your development environment.
+        Git is a Version Control System. A version control system is a software
+        that <code>tracks</code> and <code>manages</code> changes to files over
+        time. Version Control Systems allow users to revisit earlier versions of
+        their files, compare changes between versions, undo changes and a lot
+        more. Other version control software include:
+        <strong>Subversion</strong>, <strong>CVS</strong>,
+        <strong>Mercurial</strong>. They all have a common goal but vary
+        significantly in how they achieve these goals. Git is the most popular
+        version control software/system.
       </p>
 
-      <h3>1.1 Setting Up Your Environment</h3>
+      <h2>3. Installing Git</h2>
+      <p>
+        Before we can start using Git, we need to check whether it is installed
+        in the machine. To check if Git is installed, open your terminal (or
+        command prompt) and run the following command:
+        <code>git --version</code>. If Git is installed, you will see the
+        version number. If not, you will need to install it.
+      </p>
 
       <div>
-        <h3>Create Your Project Folder</h3>
-        <p>
-          Start by opening your file explorer and creating a folder named
-          <code>everyday-git</code> or any name you prefer. This folder will
-          contain all your HTML files.
-        </p>
-
-        <h3> Create Required Files</h3>
-        <p>
-          Inside your project folder, create a new file called
-          <code>index.html</code>. This file will serve as the main page of
-          your webpage. You can also create additional folders like
-          <code>images/</code> or <code>assets/</code> to store your
-          screenshots and other media.
-        </p>
-
-        <h3>Open Your Project in VS Code</h3>
-        <p>
-          Open your project folder in
-          <strong>Visual Studio Code</strong> <code> (VS Code)</code>. You can
-          do this by <b>right-clicking</b> on the folder and selecting
-          <i>"Open with Code"</i> or by using the <i>"File"</i> menu in VS
-          Code or the <em>command-line</em>. This will allow you to edit your
-          HTML files easily.
-        </p>
-
-        <h3> You're Ready!</h3>
-        <p>
-          With your environment set up and <code>index.html</code> created,
-          you’re now ready to begin your journey into Git. In the next
-          section, we’ll look at what Git is and why it’s so widely used in
-          the world of software development.
-        </p>
-      </div>
-    </div>
-
-    <h2>2. What is Git</h2>
-    <p>
-      Git is a Version Control System. A version control system is a software
-      that <code>tracks</code> and <code>manages</code> changes to files over
-      time. Version Control Systems allow users to revisit earlier versions of
-      their files, compare changes between versions, undo changes and a lot
-      more. Other version control software include:
-      <strong>Subversion</strong>, <strong>CVS</strong>,
-      <strong>Mercurial</strong>. They all have a common goal but vary
-      significantly in how they achieve these goals. Git is the most popular
-      version control software/system.
-    </p>
-
-    <h2>3. Installing Git</h2>
-    <p>
-      Before we can start using Git, we need to check whether it is installed
-      in the machine. To check if Git is installed, open your terminal (or
-      command prompt) and run the following command:
-      <code>git --version</code>. If Git is installed, you will see the
-      version number. If not, you will need to install it.
-    </p>
-
-    <div>
-      <h3>Here is an example of checking whether git is installed</h3>
-      <div>
+        <h3>Here is an example of checking whether git is installed</h3>
         <figure>
-          <img src="images/git-version.jpg" alt="Checking if Git is installed" width="700px" />
+          <img
+            src="images/git-version.jpg"
+            alt="Checking if Git is installed"
+            width="700px"
+          />
           <figcaption>
             Checking if Git is installed, if not installed follow the steps
             below.
           </figcaption>
         </figure>
       </div>
-    </div>
-    <p>To install Git, follow the instructions for your operating system:</p>
-    <ul>
-      <li>
-        <strong>Windows:</strong> Download the Git installer from the
-        <a href="https://git-scm.com/download/win" target="_blank">official website</a>. Follow the installation
-        instructions.
-      </li>
-      <li>
-        <strong>macOS:</strong> You can install Git using Homebrew. Open your
-        terminal and run: <code>brew install git</code>.
-      </li>
-      <li>
-        <strong>Linux:</strong> Use your package manager to install Git. For
-        example, on Ubuntu, run: <code>sudo apt-get install git</code>.
-      </li>
-    </ul>
 
-    <h2>4. Configuring Git</h2>
-    <p>
-      After installing Git, you need to configure it with your name and email
-      address. This information will be associated with your commits. Open
-      your terminal and run the following commands:
-    </p>
-    <div>
+      <p>To install Git, follow the instructions for your operating system:</p>
       <ul>
         <li>
-          <code>git config --global user.name "Your Name"</code> (prefer you'd use the name same as you <strong><a
-              href="https://github.com" target="_blank">GitHub</a></strong> account)
+          <strong>Windows:</strong> Download the Git installer from the
+          <a href="https://git-scm.com/download/win" target="_blank"
+            >official website</a
+          >. Follow the installation instructions.
         </li>
         <li>
-          <code>git config --global user.email " Your email address"</code>
+          <strong>macOS:</strong> You can install Git using Homebrew. Open your
+          terminal and run: <code>brew install git</code>.
+        </li>
+        <li>
+          <strong>Linux:</strong> Use your package manager to install Git. For
+          example, on Ubuntu, run: <code>sudo apt-get install git</code>.
         </li>
       </ul>
-    </div>
 
-    <div>
+      <h2>4. Configuring Git</h2>
+      <p>
+        After installing Git, you need to configure it with your name and email
+        address. This information will be associated with your commits. Open
+        your terminal and run the following commands:
+      </p>
+      <ul>
+        <li>
+          <code>git config --global user.name "Your Name"</code> (prefer you'd
+          use the name same as your
+          <strong
+            ><a href="https://github.com" target="_blank">GitHub</a></strong
+          >
+          account)
+        </li>
+        <li>
+          <code>git config --global user.email "Your email address"</code>
+        </li>
+      </ul>
+
       <h3>Here is an example of configuring the name and the email address</h3>
-      <div>
-        <figure>
-          <img src="./images/config-git.jpg" alt="Configuring Git" width="700px" />
-          <figcaption>
-            Configuring Git with your name and email address. This is
-            important because it helps to identify who made the changes in
-            the project.
-          </figcaption>
-        </figure>
-      </div>
+      <figure>
+        <img
+          src="./images/config-git.jpg"
+          alt="Configuring Git"
+          width="700px"
+        />
+        <figcaption>
+          Configuring Git with your name and email address. This is important
+          because it helps to identify who made the changes in the project.
+        </figcaption>
+      </figure>
 
-      <p>To check whether your name and email addresses have been configure use this commands: </p>
+      <p>
+        To check whether your name and email addresses have been configured use
+        these commands:
+      </p>
+      <ul>
+        <li><code>git config user.name</code></li>
+        <li><code>git config user.email</code></li>
+      </ul>
+
+      <h2>5. Initializing a Git repository</h2>
+      <p>To initialize a git repository:</p>
       <ul>
         <li>
-          <code>git config user.name</code>
+          Open the terminal or command prompt in your project directory, or
+          navigate to it using the CLI.
         </li>
         <li>
-          <code>git config user.email</code>
-        </li>
-      </ul>      
-    </div>
-
-    <h2>5. Intializing a Git repository</h2>
-    <p>To initialize a git repository</p>
-    <ul>
-      <li>
-        Open the terminal or command prompt in your project directory, you can also open your command line tool and
-        navigate to your project directory.
-      </li>
-      <li>
-        Run the command: <code>git init</code>. This will create a new Git
-        repository in your project folder.
-      </li>
-    </ul>
-    <p>
-      After running the <code>git init</code> command, you will see a new
-      folder named <code>.git</code> in your project directory. This folder
-      contains all the information about your Git repository.
-    </p>
-
-    <div>
-      <h3>Here is an example of initializing a git repository</h3>
-      <div>
-        <figure>
-          <img src="./images/git-init.jpg" alt="Initializing a Git repository" width="700px" />
-          <figcaption>
-            Initializing a Git repository. This creates a new folder named
-            .git in your project directory.
-          </figcaption>
-        </figure>
-      </div>
-    </div>
-
-    <h2>6. Adding files to the staging area</h2>
-    <p>
-      The staging area is where you prepare your files before committing
-      them to the repository. To add files to the staging area, use the
-      <code>git add</code> command followed by the file name. For example:
-    </p>
-    <ul>
-      <li>
-        To add a single file: <code>git add filename.html </code> i.e, <strong>git add index.html</strong>
-      </li>
-      <li>
-        To add all files in the current directory:
-        <code>git add .</code> or <code>git add -A</code>
-      </li>
-    </ul>
-
-    <div>
-      <h3>Here is an example of initializing a git repository</h3>
-      <div>
-        <figure>
-          <img src="./images/git-add.jpg" alt="Adding files to the staging area" width="700px" />
-          <figcaption>
-            Adding files to the staging area. This prepares your files for
-            committing.
-          </figcaption>
-        </figure>
-      </div>
-    </div>
-
-    <h2>7. Commiting changes</h2>
-    <p>
-      As discussed earlier, committing is the most fundamental aspect of git. A commit in git is basically a snapshot of
-      your project at a particular point in time.
-    </p>
-
-    <div>
-      <h3>Key components of a commit</h3>
-      <ul>
-        <li>
-          <strong>A hash</strong> : a unique identifier for each commit, generated by git.
-        </li>
-        <li>
-          <strong>Commit message</strong>: a descriptive message that explains the purpose of the commit.
-        </li>
-        <li>
-          <strong>Author</strong>: the person who made the commit.
-        </li>
-        <li>
-          <strong>Timestamp</strong> the date and time when the commit was made.
+          Run the command: <code>git init</code>. This creates a new Git
+          repository in your project folder.
         </li>
       </ul>
       <p>
-        Committing will only work if there are changes in the staging area. To commit, we use the
-        <code>git commit</code> command. Running <code>git commit</code> without passing any options will open a text
-        editor (vi by default) for you to
-        type in the message.
-        This approach is not beginner-friendly as most beginners find it hard to use vi, we can configure git to use a
-        text editor of our choosing (more about this later). Luckily, there is a <code>-m</code> flag that allows us to
-        pass a commit message directly without having to open
-        a text editor.
+        After running the <code>git init</code> command, you will see a new
+        folder named <code>.git</code> in your project directory. This folder
+        contains all the information about your Git repository.
       </p>
 
+      <h3>Here is an example of initializing a git repository</h3>
+      <figure>
+        <img
+          src="./images/git-init.jpg"
+          alt="Initializing a Git repository"
+          width="700px"
+        />
+        <figcaption>
+          Initializing a Git repository. This creates a new folder named .git in
+          your project directory.
+        </figcaption>
+      </figure>
+
+      <h2>6. Adding files to the staging area</h2>
       <p>
-        To commit changes, use the following command:
+        The staging area is where you prepare your files before committing them
+        to the repository. To add files to the staging area, use the
+        <code>git add</code> command:
       </p>
       <ul>
-        <li>
-          <code>git commit -m "Your commit message"</code> i.e, <strong>git commit -m "Initial commit"</strong>
-        </li>
+        <li>Single file: <code>git add index.html</code></li>
+        <li>All files: <code>git add .</code> or <code>git add -A</code></li>
       </ul>
 
-      <div>
-        <h3>Here is an example of committing changes</h3>
-        <div>
-          <figure>
-            <img src="./images/git-commit.jpg" alt="Committing changes" width="700px" />
-            <figcaption>
-              Committing changes. This creates a new commit with a unique
-              hash and a message.
-            </figcaption>
-          </figure>
-        </div>
-      </div>
+      <h3>Here is an example of adding files to the staging area</h3>
+      <figure>
+        <img
+          src="./images/git-add.jpg"
+          alt="Adding files to the staging area"
+          width="700px"
+        />
+        <figcaption>
+          Adding files to the staging area. This prepares your files for
+          committing.
+        </figcaption>
+      </figure>
+
+      <h2>7. Committing changes</h2>
+      <p>
+        A commit in Git is a snapshot of your project at a particular point in
+        time. Each commit includes:
+      </p>
+      <ul>
+        <li><strong>Hash</strong>: Unique identifier</li>
+        <li><strong>Commit message</strong>: Explains the change</li>
+        <li><strong>Author</strong>: Who made the change</li>
+        <li><strong>Timestamp</strong>: When the change was made</li>
+      </ul>
+
+      <p>
+        Use the <code>-m</code> flag to commit with a message:
+        <code>git commit -m "Initial commit"</code>
+      </p>
+
+      <h3>Here is an example of committing changes</h3>
+      <figure>
+        <img
+          src="./images/git-commit.jpg"
+          alt="Committing changes"
+          width="700px"
+        />
+        <figcaption>
+          Committing changes. This creates a new commit with a unique hash and a
+          message.
+        </figcaption>
+      </figure>
 
       <h2>8. Branches</h2>
       <p>
-        Branches are alternative timelines for a project, they allow you us to create separate contexts where we can try
-        new things or even work on multiple ideas in parallel.
-        Whatever happens in one branch does not affect the other branches. In git, we are always working inside a branch
-        even if we don't specify a branch.
-        As discussed earlier, in git, we are always working in a branch. The default branch is the
-        <code>master branch</code>.
-        It doesn't do anything special or have any fancy powers, it's just like any other branches.
-        In some projects however, the master branch is treated as the single source of truth or the official branch.
+        Branches are alternate timelines. The default is <code>master</code>,
+        but you can create and switch branches for experimentation or parallel
+        development.
       </p>
 
       <h2>9. Creating a new branch</h2>
-      <p>
-        To create a new branch, use the command:
-        </h2>
-      <ul>
-        <li>
-          <code>git branch BRANCH_NAME</code> i.e, <strong>git branch production</strong>
-        </li>
-      </ul>
+      <p>Command: <code>git branch production</code></p>
 
-      <p>
-        This will create a new branch with the name <code>BRANCH_NAME</code>.
-        You can replace <code>BRANCH_NAME</code> with any name you prefer.
-      </p>
-      <div>
-        <h3>Here is an example of creating a new branch</h3>
-        <div>
-          <figure>
-            <img src="./images/branch-creating.jpg" alt="Creating a new branch" width="700px" />
-            <figcaption>
-              Creating a new branch. This creates a new branch with the
-              name production.
-            </figcaption>
-          </figure>
-        </div>
-      </div>
+      <h3>Example:</h3>
+      <figure>
+        <img
+          src="./images/branch-creating.jpg"
+          alt="Creating a new branch"
+          width="700px"
+        />
+        <figcaption>Creating a new branch named production.</figcaption>
+      </figure>
 
       <h2>10. Viewing branches</h2>
-      <p>
-        To view all the branches in your repository, use the command:
-      </p>
-      <ul>
-        <li>
-          <code>git branch</code>
-        </li>
-      </ul>
-      <p>
-        This will list all the branches in your repository. The current branch will be highlighted with an asterisk
-        (<strong>*</strong>).
-      </p>
+      <p>Command: <code>git branch</code></p>
+      <p>The current branch is marked with an asterisk (<strong>*</strong>).</p>
 
-      <div>
-        <h3>Here is an example of viewing branches</h3>
-        <div>
-          <figure>
-            <img src="./images/git-branch.jpg" alt="Viewing branches" width="700px" />
-            <figcaption>
-              Viewing branches. The current branch is highlighted with an
-              asterisk (*).
-            </figcaption>
-          </figure>
-        </div>
-      </div>
+      <h3>Example:</h3>
+      <figure>
+        <img
+          src="./images/git-branch.jpg"
+          alt="Viewing branches"
+          width="700px"
+        />
+        <figcaption>
+          Viewing branches. The current one is marked with an asterisk.
+        </figcaption>
+      </figure>
 
       <h2>11. Switching active branches</h2>
-      <p>
-        To switch to a different branch, use the command:
-      </p>
-      <ul>
-        <li>
-          <code>git switch BRANCH_NAME</code> i.e, <strong>git switch production</strong>
-        </li>
-      </ul>
-      <p>
-        This will switch your active branch to the branch with the name <code>BRANCH_NAME</code>.
-        You can replace <code>BRANCH_NAME</code> with any name you prefer.
-      </p>
-      
-      <div>
-        <h3>Here is an example of switching branches</h3>
-        <div>
-          <figure>
-            <img src="./images/git-switch.jpg" alt="Switching branches" width="700px" />
-            <figcaption>
-              Switching branches. This switches your active branch to the
-              branch with the name production.
-            </figcaption>
-          </figure>
-        </div>
-      </div>
+      <p>Command: <code>git switch production</code></p>
+
+      <h3>Example:</h3>
+      <figure>
+        <img
+          src="./images/git-switch.jpg"
+          alt="Switching branches"
+          width="700px"
+        />
+        <figcaption>Switching to the production branch.</figcaption>
+      </figure>
 
       <h2>12. Merging a branch</h2>
+      <p>Command: <code>git merge production</code></p>
+
+      <h3>Example:</h3>
+      <figure>
+        <img
+          src="./images/git-merge.jpg"
+          alt="Merging a branch"
+          width="700px"
+        />
+        <figcaption>
+          Merging the production branch into the current branch.
+        </figcaption>
+      </figure>
+
+      <h2>13. Deleting a branch</h2>
+      <p>Command: <code>git branch -d production</code></p>
+
+      <h3>Example:</h3>
+      <figure>
+        <img
+          src="./images/git-branch-delete.jpg"
+          alt="Deleting a branch"
+          width="700px"
+        />
+        <figcaption>Deleting the production branch.</figcaption>
+      </figure>
+
+      <h2>14. Next steps</h2>
       <p>
-        To merge a branch into the current branch, use the command:
+        Congratulations! You’ve completed the first part of the Everyday Git
+        blog. Next, we’ll cover advanced Git topics like resolving conflicts.
       </p>
-      <ul>
-        <li>
-          <code>git merge BRANCH_NAME</code> i.e, <strong>git merge production</strong>
-        </li>
-      </ul>
+
+      <h2>15. Deploy your page</h2>
       <p>
-        This will merge the branch with the name <code>BRANCH_NAME</code> into the current branch.
-        You can replace <code>BRANCH_NAME</code> with any name you prefer.
+        Deploy to Vercel, GitHub Pages, or another platform, then submit the
+        link.
       </p>
 
-      <div>
-        <h3>Here is an example of merging a branch</h3>
-        <div>
-          <figure>
-            <img src="./images/git-merge.jpg" alt="Merging a branch" width="700px" />
-            <figcaption>
-              Merging a branch. This merges the branch with the name
-              production into the current branch.
-            </figcaption>
-          </figure>
-        </div>
-
-        <h2>13. Deleting a branch</h2>
-        <p>
-          To delete a branch, use the command:
-        </p>
-        <ul>
-          <li>
-            <code>git branch -d BRANCH_NAME</code> i.e, <strong>git branch -d production</strong>
-          </li>
-        </ul>
-        <p>
-          This will delete the branch with the name <code>BRANCH_NAME</code>.
-          You can replace <code>BRANCH_NAME</code> with any name you prefer.
-        </p>
-
-        <div>
-          <h3>Here is an example of deleting a branch</h3>
-          <div>
-            <figure>
-              <img src="./images/git-branch-delete.jpg" alt="Deleting a branch" width="700px" />
-              <figcaption>
-                Deleting a branch. This deletes the branch with the name
-                production.
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-
-        <h2>14. Next steps</h2>
-        <p>
-          Congratulations! You have completed the first part of the
-          Everyday Git blog. You have learned the basics of Git and how
-          to use it in your projects. In the next part, we will dive
-          deeper into Git and learn more advanced topics such as
-          branching, merging, and resolving conflicts.
-        </p>
-
-        <h2>15. Deploy your page</h2>
-        <p>Deploy your page to Vercel or GitHub pages or any hosting platform of your choice and submit the link</p>
-
-        <h2>15. Congratulations! You are done!</h2>
-        <p>That's it!</p>
-      </div>
-</body>
-
+      <h2>16. Congratulations! You are done!</h2>
+      <p>That's it!</p>
+    </div>
+  </body>
 </html>
