@@ -1,0 +1,25 @@
+figure{
+    margin: 20px 0;    
+  text-align: center;
+}
+figure img {
+  border-radius: 10px;
+  border-bottom: 5px solid #1ddd0f;
+  align-self: center;
+  width: 700px;
+}
+img:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    background-color: black;
+}
+figcaption {
+  color: rgb(5, 5, 5);
+  font-family: cursive;
+  font-size: 1em;
+  text-align: center;
+  font-style: italic;
+}
+a:hover {
+  background-color: #d11ace;
+}
