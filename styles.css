@@ -1,3 +1,14 @@
+h2 {
+  margin: 30px 0 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f1502f;
+  color: #24292e;
+}
+
+h3{
+  margin: 25px 0 15px;
+  color: #444;
+}
 * {
   margin: 0;
   padding: 0;
